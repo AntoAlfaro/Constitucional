@@ -10,9 +10,9 @@
 
 body {
 	margin: 0;
-	--color-text: #1c1b1b;
-	--color-bg: #efe6e1;
-	--color-link: #b07656;
+	--color-text: #cccccc;
+	--color-bg: #535353;
+	--color-link: #ff0000;
 	--color-link-hover: #000;
 	--color-deco: #e4dbd6;
 	color: var(--color-text);
@@ -80,8 +80,11 @@ a:focus {
 }
 
 .frame__title {
-	font-size: 1rem;
-	margin: 0 0 2.5rem;
+	font-size: 60px;
+	padding-left: 150px;
+	padding-right: 150px;
+	text-align: center;
+
 }
 
 .frame__links {
@@ -115,15 +118,16 @@ a:focus {
 	flex-direction: column;
 	position: relative;
 	align-items: center;
-	padding: 12rem 0;
+	padding: 10rem 0;
 	counter-reset: figure; 
+	margin-right: 200px;
+	margin-left: 200px;
+	font-size: 22px;
 }
 
 .item {
-	margin: 10vh auto;
-	max-width: 100%;
+	margin: 20vh auto;
 	position: relative;
-	will-change: transform;
 }
 
 .item::before {
@@ -146,13 +150,13 @@ a:focus {
 	width: 500px;
 	margin: 0 auto;
 	padding-bottom: calc(100% / (var(--aspect-ratio)));
-	max-width: calc(100% - 2rem);
 	will-change: transform;
 }
 
 .item:first-child .item__img-wrap {
 	--aspect-ratio: 8/10;
-	--image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/1.jpg);
+	--image: url(https://www.convergenciamedios.cl/wp-content/uploads/2019/11/Constituyente.jpg);
+
 }
 
 .item:nth-child(2) .item__img-wrap {
@@ -226,13 +230,14 @@ a:focus {
 
 .item__caption {
 	padding: 2rem 1rem;
+	padding-bottom: 50px;
 }
 
 .item__caption-title {
 	font-family: paralucent, sans-serif;
 	font-weight: 400;
 	font-size: 3rem;
-	margin: 0;
+	margin: -3px;
 }
 
 .item__caption-copy {
