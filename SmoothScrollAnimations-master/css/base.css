@@ -151,7 +151,7 @@ a:focus {
 	margin: 0 auto;
 	padding-bottom: calc(100% / (var(--aspect-ratio)));
 	will-change: transform;
-}
+}x
 
 .item:first-child .item__img-wrap {
 	--aspect-ratio: 8/10;
